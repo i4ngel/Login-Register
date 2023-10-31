@@ -8,37 +8,37 @@
     <title>Login-Register</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" >
         <div class="signin-signup">
-            <form action="" class="sign-in-form">
+            <form action="Controller/login.php" method="post" class="sign-in-form">
                 <h2 class="title">Iniciar Sesion</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Usuario">
+                    <input type="text" name="username" placeholder="Usuario" required>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" name="password" placeholder="Contraseña" required>
                 </div>
                 <input type="submit" value="login" class="btn">
 
 
             </form>
-            <form action="" class="sign-up-form">
+            <form action="Controller/register.php" method="post" class="sign-up-form">
                 <h2 class="title">Registrate</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Usuario">
+                    <input type="text" name="username-reg" placeholder="Usuario" required>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-envelope"></i>
-                    <input type="text" placeholder="Correo">
+                    <input type="text" name="email-reg" placeholder="Correo" required>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" name="password-reg" placeholder="Contraseña" required>
                 </div>
-                <input type="submit" value="Registrarse" class="btn">
+                <input type="submit" value="Registrarse" name="btn-register" class="btn">
 
             </form>
         </div>
